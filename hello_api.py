@@ -26,7 +26,7 @@ def count_clicks(token, link):
     params = {
         'key': u,
         'access_token': token,
-        'interval': 'week',
+        'interval': 'forever',
         'v': '5.199'
     }
     response = requests.get(url, params)
