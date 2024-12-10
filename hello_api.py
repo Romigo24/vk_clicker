@@ -42,13 +42,10 @@ def is_shorten_link(token, link):
         'v': '5.199'
     }
     response = requests.get(url, params=params)
-    return response.ok
-    # if response.ok:
-    #     api_answer = response.json()
-        # if 'response' in api_answer:
-        #     return True
-        # else:
-        #     return False
+    if response.ok:
+        api_answer = response.json()
+        if 'response' in api_answer:
+            return not False
  
   
 def main():
@@ -56,10 +53,9 @@ def main():
     token = os.environ['VK_API_KEY']
     link = input('Введите ссылку: ')
     if is_shorten_link(token, link):
-        try:
-            print(count_clicks(token, link))
-        except KeyError:
-            print(get_shorten_link(token, link))
+        print(count_clicks(token, link))
+    else:
+        print(get_shorten_link(token, link))
 
 
 if __name__ == '__main__':
