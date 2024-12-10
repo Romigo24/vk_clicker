@@ -42,10 +42,9 @@ def is_shorten_link(token, link):
         'v': '5.199'
     }
     response = requests.get(url, params=params)
-    if response.ok:
-        api_answer = response.json()
-        if 'response' in api_answer:
-            return not False
+    response.ok
+    api_answer = response.json()
+    return 'response' in api_answer
  
   
 def main():
