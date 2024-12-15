@@ -4,7 +4,7 @@
 
 Программа всё сделает за вас на основе методов VK API, вам нужно лишь ввести ссылку.
 
-## Как установть 
+## Как установить 
 Для запуска понадобится установленный [Python](https://pythonru.com/baza-znanij/gde-skachat-python-i-kak-ego-ustanovit-na-linux-mac-os-windows) на вашем компьютере. Затем используйте команду `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
 ```
 pip install -r requirements.txt
@@ -16,3 +16,4 @@ pip install -r requirements.txt
 Для запуска скрипта из терминала используйте команду `python3`, путь до репозитория, название файла с кодом и через пробел вашу ссылку.
 
 
+<img width="864" alt="Снимок экрана 2024-12-15 в 21 03 51" src="https://github.com/user-attachments/assets/f7151526-9c24-4e53-95fe-5e029378bef5" />
