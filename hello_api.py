@@ -2,6 +2,7 @@ import requests
 from urllib.parse import urlparse
 import os
 from dotenv import load_dotenv
+import argparse
 
 
 def get_shorten_link(token, link):
@@ -29,7 +30,7 @@ def count_clicks(token, link):
     response = requests.get(url, params)
     response.raise_for_status()
     number_of_clicks = response.json()['response']['stats'][0]['views']
-    return number_of_clicks
+    return f'По вашей ссылке перешли {number_of_clicks} раз'
 
 
 def is_shorten_link(token, link):
@@ -50,11 +51,13 @@ def is_shorten_link(token, link):
 def main():
     load_dotenv()
     token = os.environ['VK_API_KEY']
-    link = input('Введите ссылку: ')
-    if is_shorten_link(token, link):
-        print(count_clicks(token, link))
+    parser = argparse.ArgumentParser(description='Информация по ссылке Вконтакте')
+    parser.add_argument('link', help='')
+    args = parser.parse_args()
+    if is_shorten_link(token, args.link):
+        print(count_clicks(token, args.link))
     else:
-        print(get_shorten_link(token, link))
+        print(get_shorten_link(token, args.link))
 
 
 if __name__ == '__main__':
