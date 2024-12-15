@@ -5,7 +5,7 @@
 Программа всё сделает за вас на основе методов VK API, вам нужно лишь ввести ссылку.
 
 ## Как установить 
-Для запуска понадобится установленный [Python](https://pythonru.com/baza-znanij/gde-skachat-python-i-kak-ego-ustanovit-na-linux-mac-os-windows) на вашем компьютере. Затем используйте команду `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
+Для запуска понадобится токен [VK API](https://dev.vk.com/ru), а так же установленный [Python](https://pythonru.com/baza-znanij/gde-skachat-python-i-kak-ego-ustanovit-na-linux-mac-os-windows) на вашем компьютере. Затем используйте команду `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
 ```
 pip install -r requirements.txt
 ```
