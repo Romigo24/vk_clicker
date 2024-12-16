@@ -24,3 +24,8 @@ pip install python-dotenv
 
 
 <img width="864" alt="Снимок экрана 2024-12-15 в 21 03 51" src="https://github.com/user-attachments/assets/f7151526-9c24-4e53-95fe-5e029378bef5" />
+
+
+У меня это `python3 Desktop/vk_clicker/hello_api.py vk.com`
+
+![Untitled](https://github.com/user-attachments/assets/0454d1e6-396c-484a-a62a-de48a20af6f1)
