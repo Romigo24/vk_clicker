@@ -17,7 +17,8 @@ pip install python-dotenv
 ```
 Создайте файл `.env` со всеми переменными среды, которые необходимы вашему приложению(в нашем случае - это [VK API](https://dev.vk.com/ru), а так же установленный [Python](https://pythonru.com/baza-znanij/gde-skachat-python-i-kak-ego-ustanovit-na-linux-mac-os-windows, который позволяет делать запрос к сайту). Важно, добавьте `.env`-файл в .gitignore.
 
-![Снимок экрана 2024-12-16 в 21 37 56](https://github.com/user-attachments/assets/db2170d0-61e0-444d-b358-312820663e15)
+![Снимок экрана 2024-12-17 в 18 39 14](https://github.com/user-attachments/assets/b924224b-22e8-4bce-9e78-fd8bf725fbcf)
+
 
 ## Как запустить 
 Для запуска скрипта из терминала используйте команду `python3`, путь до репозитория, название файла с кодом и через пробел вашу ссылку.
